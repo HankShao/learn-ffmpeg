@@ -1,0 +1,12 @@
+lib/libyasm.a filter=lfs diff=lfs merge=lfs -text
+lib/libavcodec.a filter=lfs diff=lfs merge=lfs -text
+lib/libavdevice.a filter=lfs diff=lfs merge=lfs -text
+lib/libavformat.a filter=lfs diff=lfs merge=lfs -text
+lib/libopus.a filter=lfs diff=lfs merge=lfs -text
+lib/libswscale.a filter=lfs diff=lfs merge=lfs -text
+lib/libx265.a filter=lfs diff=lfs merge=lfs -text
+lib/libavfilter.a filter=lfs diff=lfs merge=lfs -text
+lib/libavutil.a filter=lfs diff=lfs merge=lfs -text
+lib/libpostproc.a filter=lfs diff=lfs merge=lfs -text
+lib/libswresample.a filter=lfs diff=lfs merge=lfs -text
+lib/libx264.a filter=lfs diff=lfs merge=lfs -text
