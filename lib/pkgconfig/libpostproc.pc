@@ -1,0 +1,14 @@
+prefix=/home/hank/opensource/FFmpeg/ffmpeg_build
+exec_prefix=${prefix}
+libdir=/home/hank/opensource/FFmpeg/ffmpeg_build/lib
+includedir=/home/hank/opensource/FFmpeg/ffmpeg_build/include
+
+Name: libpostproc
+Description: FFmpeg postprocessing library
+Version: 56.0.100
+Requires: libavutil >= 57.0.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lpostproc -lm
+Libs.private: 
+Cflags: -I${includedir}

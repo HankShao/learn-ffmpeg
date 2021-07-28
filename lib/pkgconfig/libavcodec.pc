@@ -1,0 +1,14 @@
+prefix=/home/hank/opensource/FFmpeg/ffmpeg_build
+exec_prefix=${prefix}
+libdir=/home/hank/opensource/FFmpeg/ffmpeg_build/lib
+includedir=/home/hank/opensource/FFmpeg/ffmpeg_build/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 59.1.102
+Requires: libswresample >= 4.0.100, libavutil >= 57.0.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -pthread -lm -lz -L/home/hank/opensource/FFmpeg/ffmpeg_build/lib -lopus -lm -L/home/hank/opensource/FFmpeg/ffmpeg_build/lib -lx264 -lpthread -lm -ldl -L/home/hank/opensource/FFmpeg/ffmpeg_build/lib -lx265 -lstdc++ -lm -lrt -ldl -lva
+Libs.private: 
+Cflags: -I${includedir}

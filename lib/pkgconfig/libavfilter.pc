@@ -1,0 +1,14 @@
+prefix=/home/hank/opensource/FFmpeg/ffmpeg_build
+exec_prefix=${prefix}
+libdir=/home/hank/opensource/FFmpeg/ffmpeg_build/lib
+includedir=/home/hank/opensource/FFmpeg/ffmpeg_build/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 8.0.102
+Requires: libswscale >= 6.0.100, libpostproc >= 56.0.100, libavformat >= 59.3.101, libavcodec >= 59.1.102, libswresample >= 4.0.100, libavutil >= 57.0.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavfilter -pthread -lm -lva -lfreetype -lbz2 -lpng15 -lz -lm
+Libs.private: 
+Cflags: -I${includedir}

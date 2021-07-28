@@ -1,0 +1,14 @@
+prefix=/home/hank/opensource/FFmpeg/ffmpeg_build
+exec_prefix=${prefix}
+libdir=/home/hank/opensource/FFmpeg/ffmpeg_build/lib
+includedir=/home/hank/opensource/FFmpeg/ffmpeg_build/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 59.3.101
+Requires: libavcodec >= 59.1.102, libswresample >= 4.0.100, libavutil >= 57.0.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -lm -lbz2 -lz
+Libs.private: 
+Cflags: -I${includedir}
